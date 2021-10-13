@@ -21,4 +21,9 @@ export class TasksComponent implements OnInit {
     this.taskService.getTasks();
   }
 
+  deleteTask(task: Task): void {
+    this.taskService.deleteTask(task);
+    this.taskService.getTaskListListener().subscribe()
+  }
+
 }
