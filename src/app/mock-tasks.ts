@@ -4,7 +4,7 @@ export const TASKS: Task[] = [
   {
     id: 1,
     text: 'Doctors Appointment',
-    day: new Date(2021, 5, 5, 14, 30);
+    day: new Date(2021, 5, 5, 14, 30),
     reminder: true,
   },
   {
