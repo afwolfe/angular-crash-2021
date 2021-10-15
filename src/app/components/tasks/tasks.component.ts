@@ -23,7 +23,17 @@ export class TasksComponent implements OnInit {
 
   deleteTask(task: Task): void {
     this.taskService.deleteTask(task);
-    this.taskService.getTaskListListener().subscribe()
+    // this.taskService.getTaskListListener().subscribe()
+  }
+
+  toggleReminder(task: Task): void {
+    task.reminder = !task.reminder;
+    this.taskService.updateTask(task);
+  }
+
+  addTask(task: Task) {
+    console.log(task);
+    this.taskService.createTask(task);
   }
 
 }

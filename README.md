@@ -4,6 +4,11 @@ Based on: [Angular Crash Course 2021 by Traversy Media](https://www.youtube.com/
 
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 12.0.1.
 
+# Modifications:
+
+- Angular 12
+- Use a subject instead of subscribing to requests individually.
+
 ## Development server
 
 Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The app will automatically reload if you change any of the source files.
